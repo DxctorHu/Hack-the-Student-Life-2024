@@ -9,7 +9,7 @@
     },
     "action": {
       "default_popup": "scripts\/sidebar.html",
-      "default_icon": "icons\/hello_extensions.png"
+      "default_icon": "icons\/sticky_note.png"
     },
     "host_permissions": [
       "<all_urls>"
