@@ -5,7 +5,7 @@ chrome.runtime.onInstalled.addListener(() => {
     chrome.contextMenus.create({
       id: "sampleContextMenu",
       title: "Sticky Note",
-      contexts: ["selection"]
+      contexts: ["selection"],
     });
 });
   

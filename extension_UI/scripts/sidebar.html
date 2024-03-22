@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sidebar</title>
-    <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 300px;
-        }
-        iframe {
-            height: 100%;
-            width: 100%;
-            border: none;
-        }
-    </style>
+  <title>Sidebar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .sidebar {
+      height: 500px;
+      overflow-y: auto;
+      background-color: #f4f4f4;
+      padding: 10px;
+      width: 500px;
+      box-sizing: border-box;
+    }
+    .item {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .item div {
+      margin: 5px 0;
+    }
+    .key {
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
-    <iframe src="https://o2t5amundyl2sw2s5333trznq40gevcf.lambda-url.us-west-2.on.aws/" title="Sticky notes"></iframe>
+  <div class="sidebar" id="sidebar"></div>
+  <script src="retrieve_message.js"></script>
 </body>
 </html>
