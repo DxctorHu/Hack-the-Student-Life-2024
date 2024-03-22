@@ -31,9 +31,9 @@ def lambda_handler(event, context):
     user_email_text = event['queryStringParameters']['user_email_text']
     original_text = event['queryStringParameters']['original_text']
     url_text = event['queryStringParameters']['url_text']
-    event_date_text = '20240402-09-00'
-    keywords_text = 'term test, 2, Tuesday, April, 2, 9:00am, EX200, 1.5 hours, L1, L26, coverage, content, course timetable, available, Course documents, closed books, non-programmable calculators, Aid sheet, test booklet, past term tests, Practice, Past exams, Additional office hours'
-    summary_text = 'Term test with coverage from L1 to L26 to be held on April 2nd in EX200, from 9:00 to 10:30. Closed books, non-programmable calculators allowed; course aid sheet included.'
+    event_date_text = '2024/03/19 9:10AM'
+    keywords_text = 'Term Test 2, Tuesday, March 19, 2024, 9:10 AM, 10:50 AM, EX 100, Exam Centre, 9 AM, Type D, Calculator, Non-Programmable'
+    summary_text = 'Term Test 2 is on March 19 at 9:10-10:50AM in EX 100, Type D exam, allowing non-programmable calculator.'
     
     custom_json = generate_custom_json(user_text, user_email_text, creation_date_text, event_date_text, original_text, summary_text, keywords_text, url_text)
 
